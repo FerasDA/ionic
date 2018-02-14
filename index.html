@@ -1,110 +1,150 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Ionic Framework</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+  <title>Ionic Framework</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/sky.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-          <h1>Ionic Framework</h1>
-          <h3>open source framework for building mobile apps using Angular</h3>
-          <p>
-						<small>Presentation by <a href="http://ferasdeiratany.com">Feras Deiratany</a> / <a href="http://twitter.com/FerasDA">@FerasDA</a></small>
-					</p>
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown>
+        <script type="text/template">
+            ## Ionic Framework
+            
+            open source framework for building mobile apps using Angular
+
+            <small>Presentation by [Feras Deiratany](http://ferasdeiratany.com) | [@FerasDA](http://twitter.com/FerasDA)</small>
+          </script>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+              ### Outline
+              * What is Ionic
+              * Dependencies
+              * Demo a new Ionic App
+              * Documentation & Resources
+            </script>
+      </section>
+      <section>
+        <section data-markdown>
+          <script type="text/template">
+            ![What is Ionic](/img/ionic-logo.png "ionic logo")
+
+            #### Open source HTML5 and Native Mobile app development framework
+          </script>
         </section>
-        <section>
-          <h4>What you need?</h4>
-          <ul style="list-style-type:none">
-            <li>Node.js</li>
-            <li>Cordova</li>
-            <li>Text Editor</li>
-            <li>Developer accounts</li>
-            <!-- <li>Optional: Gulp, bower</li> -->
-          </ul>
+        <section data-markdown>
+          <script type="text/template">
+            ![ionic parts](/img/ionic.png "ionic parts")
+          </script>
         </section>
-        <section>
-        <h4>What can you build for?</h4>
-            <ul style="list-style-type:none">
-              <li>iOS</li>
-              <li>Android</li>
-              <li>Windows Phone 8</li>
-              <li>BlackBerry 10</li>
-              <li>OSX</li>
-              <li>Ubuntu</li>
-              <li>Windows</li>
-              <li>Progressive Web Apps</li>
-              <li>Electron</li>
-            </ul>
-        </section>
-        <section>
-          <h4>IDEs</h4>
-          <ul style="list-style-type:none">
-            <li>Visual Studio</li>
-            <li class="fragment grow">Visual Studio Code</li>
-            <li>Atom</li>
-            <li>Sublime Text</li>
-            <li>WebStorm</li>
-            <li>Rider</li>
-          </ul>
-        </section>
+        <section data-markdown>
+            <script type="text/template">
+              ### ONE CODEBASE
 
-        <section>
-          <h4>Parts of the Ionic Framework</h4>
-          <ul style="list-style-type:none">
-            <li>Angular</li>
-            <li>Cordova</li>
-            <li>CSS - Components</li>
-            <li>API - Javascript</li>
-            <li>(Device) Native Components (Plugins)</li>
-            <li>Ionicons</li>
-          </ul>
+              ## RUNNING EVERYWHERE 
+            </script>
+          </section>
+      </section>
+      <section>
+        <section data-markdown>
+          <script type="text/template">
+            What do you need?
+          </script>
         </section>
-
-        <section>
-          <h3>demo</h3>
+        <section data-markdown>
+          <script type="text/template">
+              NodeJs [https://nodejs.org/en/](https://nodejs.org/en/)
+          </script>
         </section>
-<!--
-        <section>
-          <h4>Platform guides</h4>
-          https://cordova.apache.org/docs/en/latest/
-        </section> -->
-			</div>
-		</div>
+        <section data-markdown>
+            <script type="text/template">
+                Cordova & Ionic
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                ```
+                npm install -g cordova ionic
+                ```
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+              A text editor
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+              <img src="img/vscode.png" alt="vscode" style="width: 200px;"/>
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+              Developer Accounts
+
+              <img src="img/devacounts.png" alt="devacounts"/>
+            </script>
+        </section>
+      </section>
+      <section data-markdown>
+        <script type="text/template">
+            ### DEMO
+            </script>
+      </section>
+      <section>
+        <section data-markdown>
+          <script type="text/template">
+            ### Documentation, tools and resources
+          </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+              |  |  |
+              | ------ | ------ |
+              | [https://ionicframework.com/docs/](https://ionicframework.com/docs/)
+              | [https://ionicframework.com/docs/cli/](https://ionicframework.com/docs/cli/) |
+              | [https://creator.ionic.io](https://creator.ionic.io) |
+              | [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/) |
+              | [https://ionicframework.com/pro/view](https://ionicframework.com/pro/view) |
+              | [https://angular.io/](https://angular.io/) | 
+              | [https://cordova.apache.org/docs/en/latest/](https://cordova.apache.org/docs/en/latest/)
+
+            </script>
+          </section>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+  </script>
+</body>
+
 </html>
